@@ -1,0 +1,4 @@
+create_update_driver_profile_job:
+  cron: "* * * * *"
+  class: "CreateUpdateDriverProfileJob"  
+  queue: default  
