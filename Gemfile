@@ -23,16 +23,19 @@ gem 'sidekiq-cron', '~> 0.6.3'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'devise', '~> 4.4', '>= 4.4.3'
-gem 'simple_form'
 gem 'faker', '~> 1.8', '>= 1.8.4'
 gem 'nokogiri', '~> 1.8', '>= 1.8.2'
 gem 'geocoder', '~> 1.4', '>= 1.4.7'
 gem 'font-awesome-sass', '~> 5.0', '>= 5.0.6.2'
 gem 'httparty', '~> 0.16.1'
 gem 'bootstrap-sass-extras', '~> 0.0.7'
+# gem 'simple_form', '~> 3.5', '>= 3.5.1'
 
-
-
+source 'https://rails-assets.org' do
+  gem 'rails-assets-chosen'
+  gem 'rails-assets-chosen-bootstrap' # if using bootstrap
+  gem 'simple_form'
+end
 
 
 group :development, :test do
